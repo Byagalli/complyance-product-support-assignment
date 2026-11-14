@@ -1,0 +1,24 @@
+SAHARA MEDICAL – SUBMISSION AND RETRY CODE REVIEW
+=================================================
+
+Files reviewed:
+- services/api/internal/submit/submit.go
+- services/api/internal/store/store.go
+- services/api/internal/httpapi/httpapi.go
+
+Findings:
+
+1. The submission code sends requests to the ASP /v1/documents endpoint.
+2. HTTP 200 and HTTP 422 have explicit handling.
+3. HTTP 429 Retry-After is not explicitly handled.
+4. The retryable invoice selection includes Validated and Failed statuses.
+5. Submitted invoices are excluded from Retryable().
+
+Potential impact:
+Invoices with uncertain external submission outcomes may remain Submitted without being selected by the current retry-import flow.
+
+Limitation:
+The code review identifies a possible recovery gap. It does not prove that HTTP 429 caused the 32 Sahara invoices to remain Submitted.
+
+Recommended next action:
+Reconcile all 32 invoice identifiers with the ASP before attempting recovery or resubmission.

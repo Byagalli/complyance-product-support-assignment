@@ -1,0 +1,29 @@
+INCIDENT 2 – API RESTART INVESTIGATION
+=====================================
+
+Environment:
+Invoicely Lite – Docker Compose
+
+Investigation findings:
+
+1. API container restart count: 2
+2. OOMKilled: false
+3. Exit code: 0
+4. Current container status: Running and healthy
+5. Health endpoint response: {"status":"ok"}
+6. Health-check failing streak: 0
+
+Application log observations:
+- API startup log observed at 12:58:05 UTC.
+- Another API startup log observed at 12:58:37 UTC.
+- No fatal error, panic or shutdown reason was established from the inspected log excerpts.
+
+Additional observations:
+- ASP HTTP 429 responses were observed for several senders during synthetic load testing.
+- These responses were not proven to be the cause of the reported API restarts or Marina Bay 502 errors.
+
+Conclusion:
+The API was healthy when inspected. The exact cause of the reported restarts and 502 errors could not be conclusively established.
+
+Evidence source:
+Docker container inspection, API health check and application logs.

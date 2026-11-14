@@ -7,6 +7,19 @@
 
 > Replies below are drafts written on the **exercise clock** (Monday 16 November 2026, Asia/Dubai). Keep your real time in the time log at the end. Put screenshots, log excerpts and query output in `evidence/` and link to them.
 
+**Incident 2 – Evidence**
+- [API investigation](evidence/incident-2-api/api-investigation.txt)
+- [Retry code findings](evidence/incident-2-api/retry-code-findings.txt)
+
+**Incident 3 – Evidence**
+- [Import summary](evidence/incident-3-al-noor/import-summary.txt)
+- [VAT calculations](evidence/incident-3-al-noor/vat-calculations.txt)
+
+**Incident 4 – Evidence**
+- [Import summary](evidence/incident-4-sahara/import-summary.txt)
+- [Retry investigation](evidence/incident-4-sahara/retry-investigation.txt)
+
+
 > **Required:** the Acknowledgement and Priority sections for **all five** items, and the full write-up (investigation log onwards) for **at least three** items of your choice. For an item you did not fully investigate, replace the remaining sections with "Not investigated — what I would check next: …".
 
 - **Items I fully investigated, and why I chose them:**

@@ -1,0 +1,20 @@
+INCIDENT 2 – RETRY IMPLEMENTATION REVIEW
+========================================
+
+Files reviewed:
+- services/api/internal/submit/submit.go
+- services/api/internal/store/store.go
+- services/api/internal/httpapi/httpapi.go
+
+Findings:
+
+1. The submission code does not explicitly handle HTTP 429 Retry-After.
+2. Retryable() selects invoices with Validated and Failed statuses.
+3. Submitted invoices are excluded from the retry selection.
+4. The retryImport handler uses Retryable().
+
+Potential impact:
+Invoices with uncertain submission outcomes may not be recovered through the existing retry-import flow.
+
+Limitation:
+This code review identifies a retry-handling gap. It does not establish that this gap caused the specific API restarts or Marina Bay 502 errors.

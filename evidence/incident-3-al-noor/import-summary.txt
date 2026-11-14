@@ -1,0 +1,26 @@
+AL NOOR FUEL – IMPORT SUMMARY
+==============================
+
+Import ID:
+f556c4e1-5334-41bc-811b-d8f195813253
+
+Source file:
+al-noor-fuel-nov-2026.xlsx
+
+Import date:
+2026-11-14 12:55:21.500885 UTC
+
+Import status:
+Completed
+
+Invoice processing summary:
+Total invoices: 6
+Accepted: 3
+Rejected: 3
+
+Investigation:
+Three invoices were rejected by the ASP with BR-CO-15.
+The three remaining invoices were accepted.
+
+Source:
+PostgreSQL imports and invoices records from the earlier investigation.

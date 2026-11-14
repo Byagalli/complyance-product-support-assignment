@@ -1,0 +1,48 @@
+AL NOOR FUEL – BR-CO-15 VAT INVESTIGATION
+==========================================
+
+Import ID:
+f556c4e1-5334-41bc-811b-d8f195813253
+
+Invoice 0042
+------------
+Invoice: ANF-2611-0042-HT88
+Tax exclusive: 14,307.08
+VAT:              715.35
+Expected total: 15,022.43
+Actual total:    15,022.42
+Difference:           0.01
+ASP message ID:
+2705da06-e5f1-4433-b15e-8bb346f68ac4
+
+Invoice 0044
+------------
+Invoice: ANF-2611-0044-HT88
+Tax exclusive: 11,254.84
+VAT:              562.75
+Expected total: 11,817.59
+Actual total:    11,817.57
+Difference:           0.02
+ASP message ID:
+7ed40921-4c68-4adb-b9df-9ddc2d74f090
+
+Invoice 0046
+------------
+Invoice: ANF-2611-0046-HT88
+Tax exclusive: 5,343.80
+VAT:              267.20
+Expected total: 5,611.00
+Actual total:    5,610.99
+Difference:           0.01
+ASP message ID:
+d6a83986-9dbd-4633-aa88-9b02dd175d80
+
+Result:
+All three invoices passed portal validation and were submitted to the ASP.
+The ASP subsequently rejected them with BR-CO-15.
+
+Conclusion:
+The invoice payable totals did not equal tax-exclusive amounts plus VAT.
+
+Recommended action:
+Correct the source invoice totals, verify invoice identifiers and duplicate status, and resubmit only after confirming the safe recovery path.

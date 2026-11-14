@@ -1,0 +1,29 @@
+SAHARA MEDICAL – IMPORT INVESTIGATION
+======================================
+
+Import ID:
+59c3e017-87a7-49a2-8476-2d54d03dabbf
+
+Source file:
+sahara-medical-batch-1116.xlsx
+
+Import status:
+Completed
+
+Invoice processing summary:
+Total invoices: 40
+Accepted: 8
+Submitted: 32
+
+Investigation observations:
+- The first eight invoices had Parsed, Validated, Submitted and Accepted events.
+- The remaining 32 invoices had Parsed, Validated and Submitted events.
+- No Accepted or Rejected final events were found for those 32 invoices in the inspected database records.
+- An example invoice was SMS-1116-009-HT88.
+- No Sahara-specific matching entries were found in the inspected API and ASP mock log searches.
+
+Conclusion:
+The 32 invoices had no recorded final outcome in the available lab evidence. This does not establish whether the ASP received or processed them.
+
+Customer safety:
+Do not recommend blind resubmission until the ASP outcome is reconciled.
